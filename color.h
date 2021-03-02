@@ -5,9 +5,9 @@
 #include <map>
 
 typedef struct color{
-    int r;
-    int g;
-    int b;
+    float r;
+    float g;
+    float b;
 } Color;
 
 Color getColor(const char* s);

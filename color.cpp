@@ -300,5 +300,6 @@ std::map<std::string, Color> colors = {
 
 Color getColor(const char* s){
     std::string str = s;
-    return colors[str];
+    Color normalized = {colors[str].r/255, colors[str].g/255, colors[str].b/255};
+    return normalized;
 }
